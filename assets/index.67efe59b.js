@@ -657,14 +657,21 @@ Error generating stack: `+o.message+`
   font-size: 1.5rem;
   margin: 0;
   background-clip: text;
-  background: linear-gradient(90deg, #d53369, #df9e4a);
+  background: linear-gradient(
+    90deg,
+    #d53369,
+    #de455e,
+    #e35755,
+    #e56a4d,
+    #e57c49
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `,Ky=hi.p`
   font-size: 1.5rem;
   margin: 0;
   background-clip: text;
-  background: linear-gradient(90deg, #df9e4a, #daae51);
+  background: linear-gradient(90deg, #e57c49, #df9e4a, #daae51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `,Xy=()=>gt(Hy,{children:C0(Wy,{children:[gt(By,{direction:"horizontal",duration:1e3,children:gt(Qy,{children:"Christoffer Naug"})}),gt(ly,{delay:850,style:{display:"inline-block"},children:gt(Yy,{children:"There will be something here.\xA0"})}),gt(Iy,{direction:"right",delay:1850,style:{display:"inline-block"},children:gt(Ky,{children:"Eventually."})})]})}),Gy=W1`
