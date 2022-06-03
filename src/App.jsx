@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Bounce, Flip } from "react-awesome-reveal";
+import { Bounce, Flip, Fade } from "react-awesome-reveal";
 
 const Container = styled.div`
   display: flex;
@@ -20,14 +20,22 @@ const Heading = styled.h1`
   color: #b4c1d1;
   margin: 0;
 `;
-
-const Subheading = styled.p`
+const Text1 = styled.p`
   font-size: 1.5rem;
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  margin: 0;
   background-clip: text;
+  background: linear-gradient(90deg, #d53369, #df9e4a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+`;
+
+const Text2 = styled.p`
+  font-size: 1.5rem;
   margin: 0;
+  background-clip: text;
+  background: linear-gradient(90deg, #df9e4a, #daae51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const App = () => {
@@ -38,9 +46,23 @@ const App = () => {
           <Heading>Christoffer Naug</Heading>
         </Flip>
 
-        <Bounce delay={850}>
-          <Subheading>There will be something here. Eventually.</Subheading>
+        <Bounce
+          delay={850}
+          style={{
+            display: "inline-block",
+          }}
+        >
+          <Text1>There will be something here.&nbsp;</Text1>
         </Bounce>
+        <Fade
+          direction="right"
+          delay={1850}
+          style={{
+            display: "inline-block",
+          }}
+        >
+          <Text2>Eventually.</Text2>
+        </Fade>
       </Header>
     </Container>
   );
