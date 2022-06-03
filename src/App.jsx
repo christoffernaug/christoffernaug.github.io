@@ -24,7 +24,14 @@ const Text1 = styled.p`
   font-size: 1.5rem;
   margin: 0;
   background-clip: text;
-  background: linear-gradient(90deg, #d53369, #df9e4a);
+  background: linear-gradient(
+    90deg,
+    #d53369,
+    #de455e,
+    #e35755,
+    #e56a4d,
+    #e57c49
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
@@ -33,7 +40,7 @@ const Text2 = styled.p`
   font-size: 1.5rem;
   margin: 0;
   background-clip: text;
-  background: linear-gradient(90deg, #df9e4a, #daae51);
+  background: linear-gradient(90deg, #e57c49, #df9e4a, #daae51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
